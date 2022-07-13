@@ -1,3 +1,6 @@
+Aplicação front-end para consumir a web api de financas
+
+
 # AppFinancas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
