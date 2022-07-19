@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { AppRoutingModule } from './app-routing.module';
-import { StocksModule } from './modules/stocks/stocks.module';
+import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { StocksModule } from './modules/stocks/stocks.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StocksModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'}

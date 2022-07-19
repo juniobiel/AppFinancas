@@ -4,7 +4,12 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent}
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'stocks',
+    loadChildren: () => import('./modules/stocks/stocks.module')
+      .then(m => m.StocksModule)
+  }
 ];
 
 @NgModule({

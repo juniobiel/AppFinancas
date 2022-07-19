@@ -3,8 +3,7 @@ import { CommonModule } from "@angular/common";
 
 import { PurchaseComponent } from "./components/purchase/purchase.component";
 import { SellComponent } from "./components/sell/sell.component";
-import { RouterModule } from "@angular/router";
-import { StocksRoutingModule } from "./stocks-routing.module";
+import { StocksRoutingModule } from "./stocks.routes";
 
 @NgModule({
     declarations: [
@@ -13,14 +12,9 @@ import { StocksRoutingModule } from "./stocks-routing.module";
     ],
     imports: [
         CommonModule,
-        RouterModule,
-        StocksRoutingModule,
-    ],
-    exports: [
-        PurchaseComponent,
-        SellComponent,
         StocksRoutingModule
-    ]
+    ],
+    exports: []
 })
 
 export class StocksModule { }
