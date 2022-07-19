@@ -1,0 +1,30 @@
+<div class="container main-container">
+    <h4>Nova venda de ações</h4>
+    <hr/>
+    <form>
+        <div class="col-md-3">
+            <label class="col-md-6" for="ticker">Ticker</label>
+            <input class="form-control" type="text" id="ticker"/>
+        </div>
+        <div class="col-md-3">
+            <label class="col-md-6" for="price">Preço unitário</label>
+            <input class="form-control" type="text" id="price"/>
+        </div>
+        <div class="col-md-3">
+            <label class="col-md-6" for="stockQt">Quantidade</label>
+            <input class="form-control" type="text" id="stockQt"/>
+        </div>
+        <div class="col-md-3">
+            <label class="col-md-6" for="taxes">Taxas</label>
+            <input class="form-control" type="text" id="taxes"/>
+        </div>
+        <div class="col-md-3">
+            <label class="col-md-6" for="saleDate">Data da venda</label>
+            <input class="form-control" type="date" id="saleDate"/>
+        </div>
+        <div class="col-md-3">
+            <!-- Pode ser retirada do form e tratado diretamente na classe do componente -->
+            <input class="form-control" type="hidden" id="transactionType"/>
+        </div>
+    </form>
+</div>
